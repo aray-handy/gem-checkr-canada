@@ -11,7 +11,7 @@ An alternative gem is https://github.com/onboardiq/checkr-canada, but that would
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'checkr-canada'
+gem 'handy-checkr-canada'
 ```
 
 And then execute:
@@ -20,12 +20,12 @@ And then execute:
 
 Or install it yourself as:
 
-    $ gem install gem-checkr-canada
+    $ gem install handy-checkr-canada
 
 ## Usage
 
 For installation in a Rails project, create a file called
-`config/initializers/gem-checkr-canada.rb`
+`config/initializers/handy-checkr-canada.rb`
 
 ```ruby
 CheckrCanada.configure do |config|
