@@ -11,7 +11,7 @@ An alternative gem is https://github.com/onboardiq/checkr-canada, but that would
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'gem-checkr-canada'
+gem 'checkr-canada'
 ```
 
 And then execute:
