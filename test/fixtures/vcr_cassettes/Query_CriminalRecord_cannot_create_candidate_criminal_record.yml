@@ -1,0 +1,53 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://api.checkr.com/ca/v1/candidates/3336a9286f8d33f7c10f7692/criminal_records
+    body:
+      encoding: UTF-8
+      string: location=nova+scotia&offence=offence+string&sentence_date=non+date+string
+    headers:
+      Authorization:
+      - Basic M2YyOWI3ZDJjYmU4N2FiNWRlOTY4YjNkNjg4NmZiYjNlNzkxZDM0MTo=
+      Accept:
+      - application/json
+      User-Agent:
+      - Faraday v0.9.2
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 400
+      message: Bad Request
+    headers:
+      Date:
+      - Mon, 06 Nov 2017 22:05:02 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '36'
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=df553543eb0e4f135fac0c031e39c79351510005902; expires=Tue, 06-Nov-18
+        22:05:02 GMT; path=/; domain=.checkr.com; HttpOnly
+      Strict-Transport-Security:
+      - max-age=31536000
+      Vary:
+      - Origin
+      X-Content-Type-Options:
+      - nosniff
+      X-Request-Id:
+      - e4bf2b215e8130c49b66546dd93798d3
+      Server:
+      - cloudflare-nginx
+      Cf-Ray:
+      - 3b9b5a1a38d80ec7-EWR
+    body:
+      encoding: UTF-8
+      string: '{"error":"sentence_date is invalid"}'
+    http_version: 
+  recorded_at: Mon, 06 Nov 2017 22:05:02 GMT
+recorded_with: VCR 3.0.3
