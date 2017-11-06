@@ -1,8 +1,6 @@
 # Gem::Checkr::Canada
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/gem/checkr/canada`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
+This gem wraps the Checkr Canada API (https://checkr-canada.api-docs.io/v1/overview/getting-started) to run background checks in Canada.
 
 ## Installation
 
@@ -22,7 +20,14 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+For installation in a Rails project, create a file called
+`config/initializers/gem-checkr-canada.rb`
+
+```ruby
+CheckrCanada.configure do |config|
+  config.apikey = "your api key"
+end
+```
 
 ## Development
 
