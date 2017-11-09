@@ -8,6 +8,18 @@ module CheckrCanada
       @internal_response.status
     end
 
+    def error?
+      status / 100 != 2
+    end
+
+    def error_message
+      if error?
+        body[:error]
+      else
+        ""
+      end
+    end
+
     def body
       if @internal_response.body == ""
         {}
