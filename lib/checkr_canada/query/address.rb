@@ -1,7 +1,7 @@
 module CheckrCanada
   module Query
     class Address
-      def initialize(client = CheckrCanada.config)
+      def initialize(client = CheckrCanada.config.client)
         @client = client
       end
 
