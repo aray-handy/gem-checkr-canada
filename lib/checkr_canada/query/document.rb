@@ -1,6 +1,11 @@
 module CheckrCanada
   module Query
     class Document
+      module Types
+        CONSENT = "consent"
+        IDENTIFICATION = "identification"
+      end
+
       def initialize(client = CheckrCanada.config.client)
         @client = client
       end
