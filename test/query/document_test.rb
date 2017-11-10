@@ -7,7 +7,7 @@ class DocumentTest < TestCase
       response = document_query.create(
         "3336a9286f8d33f7c10f7692",
         type: "consent",
-        file_content: (0...2000).map { ('a'..'z').to_a[rand(26)] }.join,
+        file_content: Base64.encode64((0...2000).map { ('a'..'z').to_a[rand(26)] }.join),
         content_type: "application/pdf"
       )
       assert_equal(201, response.status)
