@@ -4,14 +4,14 @@ This gem wraps the Checkr Canada API (https://checkr-canada.api-docs.io/v1/overv
 
 An alternative gem is https://github.com/onboardiq/checkr-canada, but that would require the use of new(er) dependencies like the evil-client gem, which brings along other dependencies like the dry-types gem.
 
-`handy-checkr-canada` has a simple dependency on Faraday.
+`gem-checkr-canada` has a simple dependency on Faraday.
 
 ## Installation
 
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'handy-checkr-canada'
+gem 'gem-checkr-canada'
 ```
 
 And then execute:
@@ -20,7 +20,7 @@ And then execute:
 
 Or install it yourself as:
 
-    $ gem install handy-checkr-canada
+    $ gem install gem-checkr-canada
 
 ## Usage
 
