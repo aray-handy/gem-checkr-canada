@@ -14,7 +14,7 @@ module CheckrCanada
 
     def error_message
       if error?
-        body[:error]
+        body["error"]
       else
         ""
       end
